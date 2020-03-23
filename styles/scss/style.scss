@@ -1,32 +1,29 @@
 @import 'setup';
 @import 'variables';
-
+@import 'header';
+@import 'feature';
+@import 'gallery';
+@import 'footer';
 // Default Styling
+
 html {
     font-size: 62.5%;
 }
 
 img {
-    width: 100%;
     display: block;
+    width: 100%;
+    height: auto;
 }
 
-.wrapper {
-    max-width: 1180px;
-    margin: 0 auto;
-    width: 90%;
-}
-
+ul,
+li,
+a,
+p,
 h1,
 h2,
-h3,
-p,
 button,
-form,
-a,
-input,
-ul,
-li {
+footer {
     margin: 0;
     padding: 0;
     border: none;
@@ -35,13 +32,18 @@ li {
 ul,
 li,
 a {
+    list-style-type: none;
     text-decoration: none;
-    list-style: none;
 }
 
 body {
+    font-family: $body-font;
     line-height: 1.6;
     @include font-size(20);
-    text-align: center;
 }
 
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+}
