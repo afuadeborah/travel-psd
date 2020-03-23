@@ -165,6 +165,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+header {
+  background-image: url(../assets/image-main.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -193,4 +201,54 @@ li,
 a {
   list-style-type: none;
   text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 3.8rem;
+  color: #005769;
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6.8rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+a {
+  font-size: 1.9rem;
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.large-p {
+  font-size: 3.9rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #777777;
+}
+
+footer p,
+.copyright {
+  font-size: 2rem;
+  color: #777777;
+  font-weight: 500;
 }

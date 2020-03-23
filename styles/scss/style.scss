@@ -39,11 +39,50 @@ a {
 body {
     font-family: $body-font;
     line-height: 1.6;
-    @include font-size(20);
+    @include font-size(16);
 }
 
 .wrapper {
-    max-width: 1180px;
-    margin: 0 auto;
+    max-width: 1140px;
     width: 90%;
+    margin: 0 auto;
 }
+
+.logo {
+    @include font-size(38);
+    color: $logo-color;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+h1 {
+    @include font-size(68);
+    color: $heading-color;
+    font-weight: 700;
+}
+
+a {
+    @include font-size(19);
+    color: $heading-color;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.large-p {
+    @include font-size(39);
+    color: $heading-color;
+    font-weight: 700;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: $text-color;
+}
+
+footer p,
+.copyright  {
+    @include font-size(20);
+    color: $text-color;
+    font-weight: 500; 
+}
+

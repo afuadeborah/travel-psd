@@ -10,7 +10,7 @@ $background-color: #F6F8FA;
 
 
 // Fonts
-@mixin font($size) {
+@mixin font-size($size) {
     font-size: ($size/10) * 1rem;
 }
 
