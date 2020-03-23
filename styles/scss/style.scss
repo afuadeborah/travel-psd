@@ -1,0 +1,47 @@
+@import 'setup';
+@import 'variables';
+
+// Default Styling
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+form,
+a,
+input,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    line-height: 1.6;
+    @include font-size(20);
+    text-align: center;
+}
+

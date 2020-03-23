@@ -1,0 +1,18 @@
+// Colours
+
+$logo-color: #005769;
+$heading-color: #333333;
+$text-color: #777777;
+
+$accent-color: #16D6D1;
+$background-color: #F6F8FA;
+
+
+
+// Fonts
+@mixin font($size) {
+    font-size: ($size/10) * 1rem;
+}
+
+
+$body-font: "Raleway", sans-serif;
