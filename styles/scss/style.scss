@@ -57,8 +57,11 @@ body {
 
 h1 {
     @include font-size(68);
+    text-transform: lowercase;
     color: $heading-color;
     font-weight: 700;
+    width: 65%;
+    margin: 15% 0;
 }
 
 a {
@@ -69,15 +72,13 @@ a {
 }
 
 .large-p {
-    @include font-size(39);
+    @include font-size(37);
     color: $heading-color;
     font-weight: 700;
+    line-height: 1.4;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: $text-color;
-}
+
 
 footer p,
 .copyright  {

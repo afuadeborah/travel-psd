@@ -5,3 +5,30 @@ header {
     background-size: cover;
     height: 100vh;
 }
+
+// Navigation
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            
+                li {
+                    // margin: auto 20px;
+                    padding: 5px 20px;
+
+                    &:last-of-type:hover {
+                        background-color: $accent-color;
+                        border-radius: 5px;
+                    }
+                }
+                
+
+        
+        }
+}
+

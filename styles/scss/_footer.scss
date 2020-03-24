@@ -1,0 +1,17 @@
+footer {
+    background-color: $background-color;
+    
+    .footer-container {
+        height: 40vh;
+        align-items: center;
+        border-bottom: 2px solid darkgray;
+        justify-content: space-between;
+
+    }
+}
+
+
+.footer-container,
+.links-container {
+    display: flex;
+}

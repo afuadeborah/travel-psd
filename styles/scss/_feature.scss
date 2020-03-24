@@ -1,0 +1,24 @@
+h2 {
+    text-transform: uppercase;
+    color: $text-color;
+}
+
+.feature-section {
+    margin: 15% auto;
+}
+
+
+.feature-text {
+    background-color: $background-color; 
+    text-align: center;
+}
+
+
+.left-pic,
+.right-pic {
+    display: flex;
+}
+
+.left-pic {
+    margin-bottom: 20px;
+}
