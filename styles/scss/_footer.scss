@@ -7,6 +7,10 @@ footer {
         border-bottom: 2px solid darkgray;
         justify-content: space-between;
 
+            p {
+                width: 30%;
+            }
+
     }
 }
 
@@ -14,4 +18,13 @@ footer {
 .footer-container,
 .links-container {
     display: flex;
+}
+
+.links-container {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.copyright {
+    margin: 10px auto;
 }

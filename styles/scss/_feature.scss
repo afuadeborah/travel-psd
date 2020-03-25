@@ -1,24 +1,42 @@
-h2 {
-    text-transform: uppercase;
-    color: $text-color;
-}
-
 .feature-section {
     margin: 15% auto;
+
+        .left-pic,
+        .right-pic {
+            display: flex;
+        }
+
+        .left-pic {
+            margin-bottom: 30px;
+        }
+
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
 }
 
 
 .feature-text {
     background-color: $background-color; 
     text-align: center;
-}
-
-
-.left-pic,
-.right-pic {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+        a {
+            background-color: $accent-color;
+            align-self: center;
+            padding: 5px 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: $text-color;
+        }
 }
 
-.left-pic {
-    margin-bottom: 20px;
-}
+

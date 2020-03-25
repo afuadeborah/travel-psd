@@ -204,32 +204,66 @@ header {
   border-radius: 5px;
 }
 
-h2 {
-  text-transform: uppercase;
-  color: #777777;
-}
-
 .feature-section {
   margin: 15% auto;
 }
 
-.feature-text {
-  background-color: #F6F8FA;
-  text-align: center;
-}
-
-.left-pic,
-.right-pic {
+.feature-section .left-pic,
+.feature-section .right-pic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.left-pic {
-  margin-bottom: 20px;
+.feature-section .left-pic {
+  margin-bottom: 30px;
+}
+
+.feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-text {
+  background-color: #F6F8FA;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.feature-text a {
+  background-color: #16D6D1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.feature-text h2 {
+  text-transform: uppercase;
+  color: #777777;
 }
 
 .gallery {
+  margin-bottom: 15%;
+}
+
+.gallery .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,11 +288,25 @@ footer .footer-container {
           justify-content: space-between;
 }
 
+footer .footer-container p {
+  width: 30%;
+}
+
 .footer-container,
 .links-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.links-container {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.copyright {
+  margin: 10px auto;
 }
 
 html {
@@ -327,10 +375,11 @@ a {
 }
 
 .large-p {
-  font-size: 3.7rem;
+  font-size: 3.4rem;
   color: #333333;
   font-weight: 700;
   line-height: 1.4;
+  margin: 10px auto;
 }
 
 footer p,
