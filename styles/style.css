@@ -173,10 +173,14 @@ header {
   height: 100vh;
 }
 
-.nav-wrap {
+.nav-wrap,
+.nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav-wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -187,9 +191,6 @@ header {
 }
 
 .nav-wrap .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -204,41 +205,34 @@ header {
   border-radius: 5px;
 }
 
-.feature-section {
-  margin: 15% auto;
-}
-
-.feature-section .left-pic,
-.feature-section .right-pic {
+.left-pic,
+.right-pic,
+.feature-container,
+.feature-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.feature-container,
+.feature-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-section {
+  margin: 15% auto;
 }
 
 .feature-section .left-pic {
   margin-bottom: 30px;
 }
 
-.feature-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .feature-text {
   background-color: #F6F8FA;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -282,7 +276,7 @@ footer .footer-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2px solid darkgray;
+  border-bottom: 2px solid #777777;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -351,33 +345,42 @@ body {
   margin: 0 auto;
 }
 
+.logo,
+h1 {
+  text-transform: lowercase;
+}
+
+.logo,
+h1,
+a,
+.large-p {
+  font-weight: 700;
+}
+
+h1,
+a,
+.large-p {
+  color: #333333;
+}
+
 .logo {
   font-size: 3.8rem;
   color: #005769;
-  text-transform: lowercase;
-  font-weight: 700;
 }
 
 h1 {
   font-size: 6.8rem;
-  text-transform: lowercase;
-  color: #333333;
-  font-weight: 700;
   width: 65%;
   margin: 15% 0;
 }
 
 a {
   font-size: 1.9rem;
-  color: #333333;
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 .large-p {
   font-size: 3.4rem;
-  color: #333333;
-  font-weight: 700;
   line-height: 1.4;
   margin: 10px auto;
 }

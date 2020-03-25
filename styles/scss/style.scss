@@ -48,38 +48,46 @@ body {
     margin: 0 auto;
 }
 
+.logo,
+h1 {
+    text-transform: lowercase;
+}
+
+.logo,
+h1,
+a,
+.large-p {
+    font-weight: 700;
+}
+
+h1,
+a,
+.large-p {
+    color: $heading-color;
+}
+
 .logo {
     @include font-size(38);
     color: $logo-color;
-    text-transform: lowercase;
-    font-weight: 700;
 }
 
 h1 {
     @include font-size(68);
-    text-transform: lowercase;
-    color: $heading-color;
-    font-weight: 700;
     width: 65%;
     margin: 15% 0;
 }
 
 a {
     @include font-size(19);
-    color: $heading-color;
     text-transform: uppercase;
-    font-weight: 700;
+ 
 }
 
 .large-p {
     @include font-size(34);
-    color: $heading-color;
-    font-weight: 700;
     line-height: 1.4;
     margin: 10px auto;
 }
-
-
 
 footer p,
 .copyright  {
